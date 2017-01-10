@@ -1,7 +1,8 @@
 ## djfi
 
 This Project is customized from
-1. http://ozgur.github.io/python-firebase/.
+
+1. http://ozgur.github.io/python-firebase/
 2. https://github.com/ozgur/python-firebase
 
 It changed for Django usage.

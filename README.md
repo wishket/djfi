@@ -1,4 +1,4 @@
-## djfi
+## djfi [ Django-Firebase ]
 
 This Project is customized from
 

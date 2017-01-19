@@ -37,7 +37,8 @@ class InstanceForematter(json.JSONEncoder):
 
 
 def seconds_formatter(obj):
-    return ((obj.days * 86400 + obj.seconds) * 10 ** 6 + obj.microseconds) / 10 ** 6.0
+    return ((obj.days * 86400 + obj.seconds) * 10 ** 6 + obj.microseconds) \
+           / 10 ** 6.0
 
 
 @connect(60)

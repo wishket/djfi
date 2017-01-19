@@ -75,17 +75,6 @@ def make_post_request(url, data, params, headers, connection):
 
 
 @connect(60)
-def make_patch_request(url, data, params, headers, connection):
-    timeout = getattr(connection, 'timeout')
-    response = connection.patch(url, data=data, params=params, headers=headers,
-                                timeout=timeout)
-    if response.ok or response.status_code == 403:
-        return response.json() if response.content else None
-    else:
-        response.raise_for_status()
-
-
-@connect(60)
 def make_delete_request(url, params, headers, connection):
     timeout = getattr(connection, 'timeout')
     response = connection.delete(url, params=params,
